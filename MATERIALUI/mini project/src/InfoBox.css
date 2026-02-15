@@ -1,0 +1,57 @@
+.InfoBox{
+    text-align: center;
+}
+.cardConatiner{
+    display: flex;
+    justify-content: center;
+    
+}
+.temp {
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* 🔥 Hot */
+.hot {
+  color: #ff5722;
+  border-left: 4px solid #ff5722;
+  padding-left: 8px;
+}
+
+/* ❄ Cold */
+.cold {
+  color: #03a9f4;
+  border-left: 4px solid #03a9f4;
+  padding-left: 8px;
+}
+
+/* 🌤 Normal */
+.normal {
+  color: #4caf50;
+  border-left: 4px solid #4caf50;
+  padding-left: 8px;
+}
+.gradient-text {
+  font-size: 22px;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #ff512f,
+    #dd2476,
+    #1fa2ff,
+    #12d8fa,
+    #a6ffcb
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 5s ease infinite;
+}
+
+/* Smooth moving gradient */
+@keyframes gradientMove {
+  0% { background-position: 0% }
+  50% { background-position: 100% }
+  100% { background-position: 0% }
+}
